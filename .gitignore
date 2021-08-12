@@ -1,6 +1,7 @@
 .DS_Store
 node_modules/
 dist/
+docs/.vuepress/dist
 npm-debug.log*
 package-lock.json
 yarn-debug.log*
