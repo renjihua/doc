@@ -1,0 +1,17 @@
+1. 1.el-table doLayout 修复table动态布局以及使用fixed定位, 在来回切换路由时table会出现错行
+     相关 issue:
+     https://github.com/ElemeFE/element/issues/18923
+     https://github.com/ElemeFE/element/issues/16359
+   2.el-table-column v-if不加key时造成的奇怪问题
+2. vue 大量数据展示优化
+   对于一次性插入大量数据的情况，优化方法有两个:
+   「前端进阶」高性能渲染十万条数据(时间分片) https://juejin.cn/post/6844903938894872589
+   「前端进阶」高性能渲染十万条数据(虚拟列表) https://juejin.cn/post/6844903982742110216
+   今天4点半开会, 预计30分钟, 内容是:
+   1.虚拟列表
+   2.ecahrts map渲染地图
+.. 分享一个提交开发效率的工具 swaggerGen
+3. 1.从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理(第一次会议)
+   https://segmentfault.com/a/1190000012925872
+   2.Vue 2.x脱坑记 - 查漏补缺 (第一次会议)
+   https://juejin.cn/post/6844903509331181575
