@@ -1,6 +1,5 @@
 ---
 home: true
-heroImage: /logo.png
 heroText: 前端文档
 tagline: 
 actionText: 开始 →
@@ -22,3 +21,7 @@ actionLink: /guide/eltable-dolayout
 6. [从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理](https://segmentfault.com/a/1190000012925872)
 
 7. [Vue 2.x脱坑记 - 查漏补缺](https://juejin.cn/post/6844903509331181575)
+
+unknow:
+1. 当JS引擎执行时GUI线程会被挂起, 为什么css动画还在执行?
+2. WebWroker有哪些应用场景?
