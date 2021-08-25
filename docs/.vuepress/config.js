@@ -28,6 +28,7 @@ module.exports = {
                         ['https://github.com/chenqf/frontEndBlog/issues/16', '高性能渲染十万条数据(虚拟列表)'],
                         ['https://github.com/chenqf/frontEndBlog/issues/15', '高性能渲染十万条数据(时间分片)'],
                         ['https://segmentfault.com/a/1190000012925872', '从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理'],
+                        ['http://latentflip.com/what-is-the-event-loop-anyway', 'What the heck is the event loop anyway?'],
                         ['https://juejin.cn/post/6844903509331181575', 'Vue 2.x脱坑记 - 查漏补缺'],
                     ]
                 }
