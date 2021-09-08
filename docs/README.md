@@ -19,5 +19,5 @@ actionLink: /guide/eltable-dolayout
 9. [Vue 2.x脱坑记 - 查漏补缺](https://juejin.cn/post/6844903509331181575)
 
 unknown:
-1. 当JS引擎执行时GUI线程会被挂起, 为什么css动画还在执行?  [答案](https://www.cnblogs.com/shuaishuaidejun/p/7444711.html)
+1. 当JS引擎执行时GUI线程会被挂起, 为什么css动画还在执行?  [答案](/guide/css-animation-vs-js-animation)
 2. WebWorker有哪些应用场景?
