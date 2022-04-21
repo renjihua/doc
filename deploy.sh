@@ -13,5 +13,4 @@ git add -A
 git commit -m 'deploy'
 git push -f git@github.com:renjihua/renjihua.github.io.git master
 
-
-cd -
+# git push -f https://gitee.com/renjihua/renjihua.gitee.io.git master

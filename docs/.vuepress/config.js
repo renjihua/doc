@@ -19,6 +19,7 @@ module.exports = {
                         ['eltable-dolayout', 'eltable dolayout'],
                         ['vif-key', 'v-if不加key的问题'],
                         ['echarts-map', 'ecahrts渲染地图案例'],
+                        ['vue-sum-up', 'vue项目总结'],
                     ]
                 },
                 {
@@ -53,6 +54,11 @@ module.exports = {
                 }
             ],
         },
+    },
+    markdown: {
+        anchor: {
+            level: 2
+        }
     },
     configureWebpack: {
         resolve: {
