@@ -17,6 +17,7 @@ actionLink: /guide/eltable-dolayout
 7. [What the heck is the event loop anyway?](http://latentflip.com/what-is-the-event-loop-anyway)
 8. [js内存管理和垃圾回收机制.ppt](https://docs.qq.com/slide/DY1B1YkJJaXNUc2Nt)
 9. [Vue 2.x脱坑记 - 查漏补缺](https://juejin.cn/post/6844903509331181575)
+10. [Vue项目总结](/guide/vue-sum-up)
 
 unknown:
 1. 当JS引擎执行时GUI线程会被挂起, 为什么css动画还在执行?  [答案](/guide/css-animation-vs-js-animation)

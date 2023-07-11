@@ -107,6 +107,44 @@ Vue.use(ElementUI, { size: 'small' })
 }
 ```
 
+## 避免重复点击
+
+在`main.js`:
+
+```js
+import { throttle } from 'lodash'
+
+// 防止按钮连续点击, 0.5s内只能点一次
+ElementUI.Button.methods.handleClick = throttle(
+    function(evt) {
+        this.$emit('click', evt);
+    },
+    500,
+    {
+        trailing: false
+    }
+)
+```
+
+在`api.js`:
+
+```js
+import { throttle } from 'lodash'
+export const match = throttle(
+    function(data) {
+        return request({
+            url: '/create',
+            method: 'post',
+            data
+        })
+    },
+    500,
+    {
+        trailing: false
+    }
+)
+```
+
 
 ## el-table自动调整列宽
 
