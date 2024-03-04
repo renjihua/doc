@@ -30,7 +30,7 @@
 
 
 
-## 方便查看项目发布时间
+## webpack 方便查看项目发布时间
 
 在`build/webpack.prod.conf.js`:
 
@@ -70,6 +70,22 @@ mounted() {
 console.log('项目更新时间:' + VERSION)
 ```
 
+## vite 方便查看项目发布时间
+
+在`src/vite.config.js`添加:
+
+```js
+define: {
+    __APP_VERSION__: JSON.stringify(new Date().toLocaleString())
+},
+```
+
+在`src/main.js`:
+
+```js
+console.log('项目更新时间:' + __APP_VERSION__)
+```
+
 
 ## Element UI默认配置
 
@@ -107,16 +123,32 @@ Vue.use(ElementUI, { size: 'small' })
 }
 ```
 
-## 避免重复点击
+## 避免后退时遮照层还存在
+
+在`main.js`:
+
+```js
+// fix: element 弹窗浏览器后退-遮照层还存在问题 以及跟vue keep-alive冲突
+ElementUI.Dialog.deactivated = function() {
+    if (this.visible) this.$emit('update:visible', false)
+}
+```
+
+## 避免重复点击, 点击后自动失去焦点
 
 在`main.js`:
 
 ```js
 import { throttle } from 'lodash'
 
-// 防止按钮连续点击, 0.5s内只能点一次
+// 防止按钮连续点击, 0.5s内只能点一次, 点击后自动失去焦点
 ElementUI.Button.methods.handleClick = throttle(
     function(evt) {
+        let target = evt.target
+        if (target.nodeName == 'SPAN') {
+            target = evt.target.parentNode
+        }
+        target.blur()
         this.$emit('click', evt);
     },
     500,
